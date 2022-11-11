@@ -39,7 +39,7 @@ public class Task6 {
             System.out.println();
         }
 
-
+        System.out.println();
 //      Task 6.2:
 //
 //      XOXO
@@ -49,16 +49,37 @@ public class Task6 {
 
         for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
-                if (row % 2 == 0){
+                if (col % 2 == 0){
                     System.out.print("X");
                 }
-                else if (row % 2 != 0){
+                else if (col % 2 != 0){
                     System.out.print("O");
                 }
 
             }
             System.out.println();
         }
+
+        System.out.println();
+//      Task 6.3:
+//
+//      XOOO
+//      OXOO
+//      OOXO
+//      OOOX
+
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++) {
+                if (col == row){
+                    System.out.print("X");
+                }
+                else {
+                    System.out.print("O");
+                }
+            }
+            System.out.println();
+        }
+
 
     }
 }
